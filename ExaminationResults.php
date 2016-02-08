@@ -1,9 +1,9 @@
 <?php 
 session_start();
-// if(!isset($_SESSION["uname"]))
-// {
-// 	header('Location: AdminPage.php');
-// }
+//if(!isset($_SESSION["uname"]))
+//{
+//	header('Location: AdminPage.php');
+//}
 ?>
 
 <!DOCTYPE html>
@@ -45,14 +45,14 @@ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,lo
 																	$("#form").css("display","none");
 																	var pass=$("#SubjectID").val();
 																	$('#logs').html("Subject-ID:"+pass);
+																	$('#logout').show();
 																	$('#form').html(data).show();
 															}
 								);
 						});
 				});
-
 </script>
- 
+
 <script type="text/javascript" src="jquery-1.2.6.js"></script>
 <script type="text/javascript" src="thickbox.js"></script>
 
@@ -168,6 +168,7 @@ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,lo
 </td>
 		<!--Added by us-->
 	  <td width="144" height="24" ><div id="logs" class="1tab"></div>
+	  <td width="144" height="24" ><div id="logout" class="1tab" style="display:none"><a href="logout\.php">Log Out</a></div>
     </tr>
   </table>
 <div class="clear"></div>
@@ -218,4 +219,3 @@ Page created by Mohd Zaid, Mohd Jahid (DCS-5th Sem-2015)
  © 2014&nbsp;Jamia Millia Islamia. All rights reserved</div>
        
 </body></html>
-

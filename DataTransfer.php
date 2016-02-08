@@ -40,5 +40,12 @@
 					  echo 'University Exam Practical : '.'<input type="radio" name="categroy"'.$status[1].'/>'; echo '<br/>';
 					  echo 'Internal Assessment : '.'<input type="radio" name="categroy"'.$status[2].'/>';  echo '<br/>';	
 					  echo 'Internal Assessment Practical : '.'<input type="radio" name="categroy"'.$status[3].'/>'; echo '<br/>';
+					  echo "<input type='submit' value='Submit'/>";
+
+					  session_start();
+					  $_SESSION["SubjectID"]=$_POST['SubjectID'];
+					  $_SESSION["ExamID"]=$_POST['ExamID'];
+						//session_destroy();
+						//header('Location: AdminPage.php');
 			   }
 ?> 
